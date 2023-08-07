@@ -1,0 +1,17 @@
+{
+    "name": "awais/firstawesomeplugin",
+    "description": "Awesome Starter Template",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Awais",
+            "email": "awaismustafa3001@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": { "Inc\\": "./inc" }
+    }
+}
