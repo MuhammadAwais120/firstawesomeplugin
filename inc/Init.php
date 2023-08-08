@@ -4,6 +4,7 @@
 */
 namespace Inc;
 
+
 final class Init{
 
     /**

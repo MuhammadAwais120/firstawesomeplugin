@@ -1,9 +1,10 @@
 <?php
 /**
-* @package firstawesome-plugin
+    * @package firstawesome-plugin
 */
 namespace Inc\Pages;
-class Admin
+use \Inc\Base\BaseController;
+class Admin extends BaseController
 {
     public function register() {
         add_action( 'admin_menu',array( $this, 'admin_plugin_menu' ) );
@@ -13,6 +14,6 @@ class Admin
         add_menu_page( 'Awesome Plugin', 'Awesome', 'manage_options','awesome_plugin', array( $this, 'admin_index'), '', 100 );
     }
     public function admin_index(){
-        require_once PLUGIN_PATH . 'templates/admin.php';  
+        require_once $this->plugin_path . 'templates/admin.php';  
     }
 }

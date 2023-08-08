@@ -3,10 +3,11 @@
 * @package firstawesome-plugin
 */
 namespace Inc\Base;
-class SettingLinks
+use \Inc\Base\BaseController;
+class SettingLinks extends BaseController
 {
     public function register() {
-        add_filter( "plugin_action_links_". PLUGIN, array($this, 'settings_links') );
+        add_filter( "plugin_action_links_". $this->plugin , array($this, 'settings_links') );
     }
     public function settings_links( $links ){
         $setting_links = '<a href="admin.php?page=awesome_plugin">Settings</a>';
