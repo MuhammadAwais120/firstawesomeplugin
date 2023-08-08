@@ -1,6 +1,6 @@
 <?php
 /**
-    * @package firstawesome-plugin
+* @package firstawesome-plugin
 */
 namespace Inc\Base;
 class Activate{
