@@ -8,6 +8,7 @@ class BaseController
 {
     public $plugin_path;
     public $plugin_url;
+    public $settings;
     public $managers = array();
     public $plugin;
     public function __construct() {

@@ -17,8 +17,6 @@ class TestimonialController extends BaseController
 
 	public $subpages = array();
 
-	public $settings;
-
 	public function register()
 	{
 		$option = get_option( 'awesome_plugin' );
