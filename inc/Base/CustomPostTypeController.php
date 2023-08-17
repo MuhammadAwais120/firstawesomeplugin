@@ -172,6 +172,10 @@ class CustomPostTypeController extends BaseController
 	public function storeCustomPostTypes()
 	{
 		$options = get_option( 'awesome_plugin_cpt' ) ?: array();
+		// echo '<pre>';
+		// var_dump($options);
+		// echo '</pre>';
+		// die();
 
 		foreach ($options as $option) {
 
